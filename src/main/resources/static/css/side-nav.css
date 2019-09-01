@@ -1,0 +1,111 @@
+/*
+-----------------------
+Navigation Drawer
+-------------------------
+*/
+@import "colors.css";
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  width: 100%;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+div {
+  display: inline-block;
+}
+.toolbar {
+  display: block;
+  width: 100%;
+  background: var(--accent-color);
+  vertical-align: middle;
+  color: white;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5); /* Параметры тени */
+  height: 60px;
+}
+.container {
+    font-size:30px;
+    cursor:pointer;
+}
+.container span {
+  font-size: 40px;
+  margin-left: 10px;
+  cursor: pointer;
+  float: left;
+}
+body {
+  background: white;
+  margin: 0px;
+}
+.content {
+  margin: 8px;
+}
+
+.float_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 90%;
+  bottom: 5%;
+  background: var(--accent-color);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5); /* Параметры тени */
+  text-align: center;
+  color: white;
+
+  font-size: 50px;
+}
+.float_button:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.7); /* Параметры тени */
+  transition: box-shadow .2s;
+}

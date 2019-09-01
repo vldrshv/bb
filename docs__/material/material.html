@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Material</title>
+    <link rel="stylesheet" type="text/css" href="material.css">
+    <script type="text/javascript" src="material.js"></script>
+    <link href="https://res.cloudinary.com/finnhvman/raw/upload/matter/matter-0.2.2.css" rel="stylesheet">
+</head>
+<header>
+    Pure CSS Material Components Showcase
+</header>
+<nav>UPDATE! This has been open-sourced here: <a href="https://github.com/finnhvman/matter" target="_top">https://github.com/finnhvman/matter</a></nav>
+<main class="grid">
+    <div></div>
+    <div class="column">Enabled</div>
+    <div class="column">Disabled</div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/MQyJxV" target="_top">Button - Contained</a>
+    <div><button class="matter-button-contained">Contained</button></div>
+    <div><button class="matter-button-contained" disabled>Contained</button></div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/GYaWdV" target="_top">Button - Outlined</a>
+    <div><button class="matter-button-outlined">Outlined</button></div>
+    <div><button class="matter-button-outlined" disabled>Outlined</button></div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/YeXwNY" target="_top">Button - Text</a>
+    <div><button class="matter-button-text">Text</button></div>
+    <div><button class="matter-button-text" disabled>Text</button></div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/zpygBB" target="_top">Checkbox</a>
+    <div class="checkboxes">
+        <label class="matter-checkbox">
+            <input type="checkbox">
+            <span>Unchecked</span>
+        </label>
+        <label class="matter-checkbox">
+            <input type="checkbox" checked>
+            <span>Checked</span>
+        </label>
+        <label class="matter-checkbox">
+            <input type="checkbox">
+            <span>Indeterminate</span>
+        </label>
+    </div>
+    <div class="checkboxes">
+        <label class="matter-checkbox">
+            <input type="checkbox" disabled>
+            <span>Unchecked</span>
+        </label>
+        <label class="matter-checkbox">
+            <input type="checkbox" checked disabled>
+            <span>Checked</span>
+        </label>
+        <label class="matter-checkbox">
+            <input type="checkbox" disabled>
+            <span>Indeterminate</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/vVwJbq" target="_top">Radio Buttons</a>
+    <div class="radios">
+        <label class="matter-radio">
+            <input type="radio" name="group-enabled">
+            <span>Unchecked</span>
+        </label>
+        <label class="matter-radio">
+            <input type="radio" name="group-enabled" checked>
+            <span>Checked</span>
+        </label>
+    </div>
+    <div class="radios">
+        <label class="matter-radio">
+            <input type="radio" name="group-disabled" disabled>
+            <span>Unchecked</span>
+        </label>
+        <label class="matter-radio">
+            <input type="radio" name="group-disabled" checked disabled>
+            <span>Checked</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/pOeyjE" target="_top">Switch</a>
+    <div class="switches">
+        <label class="matter-switch">
+            <input type="checkbox">
+            <span>Off</span>
+        </label>
+        <br/>
+        <label class="matter-switch">
+            <input type="checkbox" checked>
+            <span>On</span>
+        </label>
+    </div>
+    <div class="switches">
+        <label class="matter-switch">
+            <input type="checkbox" disabled>
+            <span>Off</span>
+        </label>
+        <br/>
+        <label class="matter-switch">
+            <input type="checkbox" checked disabled>
+            <span>On</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/LJWJVR" target="_top">Slider</a>
+    <div>
+        <label class="matter-slider">
+            <input type="range" min="0" max="100">
+            <span>Slider</span>
+        </label>
+    </div>
+    <div>
+        <label class="matter-slider">
+            <input type="range" min="0" max="100" disabled>
+            <span>Slider</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/bmNdNr" target="_top">Progress - Circular</a>
+    <div><progress class="matter-progress-circular"></progress></div>
+    <div></div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/OBLZRX" target="_top">Progress - Linear</a>
+    <div class="progresses">
+        <progress class="matter-progress-linear" value="0" max="100"></progress>
+        <progress class="matter-progress-linear"></progress>
+    </div>
+    <div></div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/bxXPqN" target="_top">Textfield - Filled</a>
+    <div class="textfields">
+        <label class="matter-textfield-filled">
+            <input placeholder=" ">
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <input placeholder=" " value="Some text">
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <textarea placeholder=" "></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <textarea placeholder=" ">Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+    <div class="textfields">
+        <label class="matter-textfield-filled">
+            <input placeholder=" " disabled>
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <input placeholder=" " value="Some text" disabled>
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <textarea placeholder=" " disabled></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-filled">
+            <textarea placeholder=" " disabled>Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/xyOORQ" target="_top">Textfield - Outlined</a>
+    <div class="textfields">
+        <label class="matter-textfield-outlined">
+            <input placeholder=" ">
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <input placeholder=" " value="Some text">
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <textarea placeholder=" "></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <textarea placeholder=" ">Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+    <div class="textfields">
+        <label class="matter-textfield-outlined">
+            <input placeholder=" " disabled>
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <input placeholder=" " value="Some text" disabled>
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <textarea placeholder=" " disabled></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-outlined">
+            <textarea placeholder=" " disabled>Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+
+    <a class="title" href="https://codepen.io/finnhvman/pen/GyzbEj" target="_top">Textfield - Standard</a>
+    <div class="textfields">
+        <label class="matter-textfield-standard">
+            <input placeholder=" ">
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <input placeholder=" " value="Some text">
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <textarea placeholder=" "></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <textarea placeholder=" ">Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+    <div class="textfields">
+        <label class="matter-textfield-standard">
+            <input placeholder=" " disabled>
+            <span>Empty</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <input placeholder=" " value="Some text" disabled>
+            <span>Non-empty</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <textarea placeholder=" " disabled></textarea>
+            <span>Empty Textarea</span>
+        </label>
+        <label class="matter-textfield-standard">
+            <textarea placeholder=" " disabled>Some text</textarea>
+            <span>Non-empty Textarea</span>
+        </label>
+    </div>
+
+    <aside>
+        <div class="theming">
+            <label id="toggle" class="matter-switch">
+                <input type="checkbox" checked>
+                <span>Colors</span>
+            </label>
+            <label id="primary" class="matter-slider">
+                <input  type="range" min="0" max="360" value="207">
+                <span>Primary</span>
+            </label>
+            <label id="on-primary" class="matter-slider">
+                <input type="range" min="0" max="255" value="255">
+                <span>On Primary</span>
+            </label>
+            <label id="surface" class="matter-slider">
+                <input type="range" min="0" max="255" value="255">
+                <span>Surface</span>
+            </label>
+            <label id="on-surface" class="matter-slider">
+                <input type="range" min="0" max="255" value="0">
+                <span>On Surface</span>
+            </label>
+        </div>
+    </aside>
+</main>
+<footer>
+    <a href="https://codepen.io/collection/nZKBZe/" target="_blank">Pure CSS Material Components</a>
+</footer>
+</html>
