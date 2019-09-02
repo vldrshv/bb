@@ -16,19 +16,35 @@
 <body>
   <div id="mySidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <div style="background: white; height: 100px; width: 100%">
+    <div style="background: white; height: 100px; width: 250px">
     	<div style="float: left; margin-right: 10px; margin-left: 10px">
-        	<img src="./img/my_team.png" style="height: 50px; width: 50px; margin-top: 5px">
+        	<img src="./img/my_team_logo.png" style="height: 50px; width: 50px; margin-top: 5px">
       	</div>
-    	<span style="font-size: 22px"><b>${coach.name}</b></span>
-    	<br>
-    	<span style="font-size: 10px">${coach.email}</span>
+        <div>
+            <span style="font-size: 22px"><b>${coach.name}</b></span>
+            <br>
+            <span style="font-size: 10px">${coach.email}</span>
+        </div>
     </div>
     <hr>
-    <a href="#">My team</a>
-    <a href="#">My tournament</a>
+      <div class="menu_item">
+          <div style="float: left">
+              <img src="./img/my_team.png" >
+          </div>
+          <div>
+              <a href="#" id="m1">My team</a>
+          </div>
+      </div>
+      <div class="menu_item">
+          <div style="float: left">
+              <img src="./img/my_tournament.png" >
+          </div>
+          <div>
+              <a href="#">My tournament</a>
+          </div>
+      </div>
     <a href="#">Statistics</a>
-    <div class="menu_item">
+    <div class="menu_item" id="m4">
     	<div style="float: left">
     		<img src="./img/super-bowl-trophy_WC_c.png" >
     	</div>
@@ -36,7 +52,7 @@
             <a href="#">World cup</a>
         </div>
     </div>
-      <div class="menu_item">
+      <div class="menu_item" id="m5">
           <div style="float: left">
               <img src="./img/naf_cup_hovered.png" >
           </div>
@@ -44,7 +60,7 @@
               <a href="#">Euro cup</a>
           </div>
       </div>
-    <a href="#">Waaaat?</a>
+    <a href="#" id="6">Waaaat?</a>
 
   </div>
 
@@ -71,14 +87,14 @@
   <script>
   function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+    // document.getElementById("main").style.marginLeft = "250px";
+    // document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
   }
 
   function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft= "0";
-    document.body.style.backgroundColor = "white";
+      document.getElementById("mySidenav").style.width = "0";
+    // document.getElementById("main").style.marginLeft= "0";
+    // document.body.style.backgroundColor = "white";
   }
   </script>
 </body>

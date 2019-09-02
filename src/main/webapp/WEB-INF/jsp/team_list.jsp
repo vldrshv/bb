@@ -53,11 +53,26 @@
             <td>7</td>
             <td>1</td>
             <td>1500</td>
-            <td bg="red" class="circle"></td>
-            <td bg="yellow" class="circle"></td>
-            <td bg="yellow" class="circle"></td>
-            <td bg="red" class="circle"></td>
-            <td bg="green" class="circle"></td>
+            <td><span class="circle draw"></span></td>
+            <td><span class="circle win"></span></td>
+            <td><span class="circle loose"></span></td>
+            <td><span class="circle loose"></span></td>
+            <td><span class="circle draw"></span></td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>3</td>
+            <td>1</td>
+            <td>1</td>
+            <td>10</td>
+            <td>9</td>
+            <td>1</td>
+            <td>1900</td>
+            <td><span class="circle win"></span></td>
+            <td><span class="circle win"></span></td>
+            <td><span class="circle loose"></span></td>
+            <td><span class="circle win"></span></td>
+            <td><span class="circle draw"></span></td>
         </tr>
     </tbody>
 </table>

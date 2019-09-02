@@ -31,8 +31,6 @@ function validateForm(form, fields, button) {
             break;
         }
     }
-    // button.classList.add(isValid == true ? "buttonEnable" : "buttonDisable");
-    // button.classList.remove(isValid == true ? "buttonDisable" : "buttonEnable");
     button.disabled = !isValid;
 
     return isValid;

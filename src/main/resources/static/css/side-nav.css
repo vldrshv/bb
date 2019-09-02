@@ -14,6 +14,7 @@ Navigation Drawer
 .sidenav {
   height: 100%;
   width: 0;
+  /*width: 250px;*/
   position: fixed;
   z-index: 1;
   top: 0;
@@ -21,10 +22,13 @@ Navigation Drawer
   background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
+  /*transition: 2s;*/
   padding-top: 60px;
+  box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.12);
 }
 
 .sidenav a {
+  width: 250px;
   padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 18px;
@@ -32,12 +36,16 @@ Navigation Drawer
   display: block;
   transition: 0.3s;
 }
+.sidenav div.menu_item {
+  width: 250px;
+}
 
 .sidenav a:hover {
   color: black;
 }
 
 .sidenav .closebtn {
+  width: 0px;
   position: absolute;
   top: 0;
   right: 25px;

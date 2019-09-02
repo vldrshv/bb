@@ -9,12 +9,11 @@ table {
     width: 90%;
     min-width: 300px;
     max-width: 900px;
-    /*box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Параметры тени */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
 }
 
 table:hover {
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.24);
-    /*box-shadow: 0 0 4px rgba(0,0,0,0.2); /* Параметры тени */
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.24);
 }
 
 thead td {
@@ -40,24 +39,23 @@ tbody td {
 }
 
 tbody td[marked="true"] {
-    /*background: rgba(255,0,0,0.2);*/
-    color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.1);
+}
+tbody td[marked="false"] {
+    background-color: rgba(0, 255, 0, 0.1);
 }
 .circle {
-    border: 1px solid transparent;
+    height: 8px;
+    width: 8px;
     border-radius: 50%;
-    height: 10px;
-    width: 0px;
+    display: inline-block;
 }
-tbody td[bg="red"] {
-    /*background: rgba(255,0,0,0.2);*/
-    background-color: rgb(255, 0, 0);
+.loose {
+    background-color: #EA4335;
 }
-tbody td[bg="yellow"]  {
-    /*background: rgba(255,0,0,0.2);*/
-    background-color: yellow;
+.draw {
+    background-color: #9AA0A6;
 }
-tbody td[bg="green"] {
-    /*background: rgba(255,0,0,0.2);*/
-    background-color: rgb(0, 255, 0);
+.win {
+    background-color: #3AA757;
 }
