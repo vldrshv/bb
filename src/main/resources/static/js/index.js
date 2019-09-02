@@ -99,7 +99,7 @@ function validateUser()
     var password = document.getElementById("passwordLI");
     if (password.value == localPasswd && username.value === localUser){
         alert('true');
-        window.location.href = './home.html'
+        window.location.href = './home'
     }
 
 }

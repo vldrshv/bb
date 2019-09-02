@@ -18,23 +18,23 @@ Navigation Drawer
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: white;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 18px;
   color: #818181;
   display: block;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #f1f1f1;
+  color: black;
 }
 
 .sidenav .closebtn {
@@ -108,4 +108,28 @@ body {
 .float_button:hover {
   box-shadow: 0 0 12px rgba(0,0,0,0.7); /* Параметры тени */
   transition: box-shadow .2s;
+}
+
+.menu_item img {
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+.menu_item a {
+  width: 100%;
+  text-decoration: none;
+  float: left;
+}
+
+.menu_item {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+div .menu_item:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
 }
