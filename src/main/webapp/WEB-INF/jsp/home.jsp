@@ -2,10 +2,15 @@
 <html>
 <head>
 	<title>Home</title>
-  <link rel="stylesheet" type="text/css" href="./css/text-field-outlined.css">
-  <link rel="stylesheet" type="text/css" href="./css/button-outlined.css">
-  <link rel="stylesheet" type="text/css" href="./css/button-contained.css">
-  <link rel="stylesheet" type="text/css" href="./css/side-nav.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="./css/text-field-outlined.css">
+    <link rel="stylesheet" type="text/css" href="./css/button-outlined.css">
+    <link rel="stylesheet" type="text/css" href="./css/button-contained.css">
+    <link rel="stylesheet" type="text/css" href="./css/side-nav.css">
+    <link rel="stylesheet" type="text/css" href="./css/team_table.css">
+
 	<script type="text/javascript" src="index.js"></script>
 </head>
 <body>
@@ -56,45 +61,9 @@
       <h2>Sidenav Push Example</h2>
       <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black  see-through background-color to body when the sidenav is opened.</p>
 <!--  -->
-        <!-- <jsp:include page="team_list.jsp"/> -->
+        <jsp:include page="team_list.jsp"/>
 <!--  -->
 
-      <thead>
-          <td>name</td>
-          <td>kills</td>
-          <td>passes</td>
-          <td>points</td>
-          <td>available</td>
-          <td>AV</td>
-          <td>AG</td>
-          <td>MA</td>
-          <td>STR</td>
-          <td>Level</td>
-      </thead>
-      <tr>
-          <td>Player1</td>
-          <td>6</td>
-          <td>2</td>
-          <td>3</td>
-          <td>true</td>
-          <td>3</td>
-          <td>4</td>
-          <td>3</td>
-          <td>7</td>
-          <td>5</td>
-      </tr>
-      <tr>
-          <td>Player1</td>
-          <td>1</td>
-          <td>7</td>
-          <td>9</td>
-          <td>false</td>
-          <td>5</td>
-          <td>5</td>
-          <td>2</td>
-          <td>2</td>
-          <td>4</td>
-      </tr>
     </div>
   </div>
     <div class="float_button"> + </div>
