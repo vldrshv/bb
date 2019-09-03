@@ -26,16 +26,7 @@
     <jsp:include page="side_nav.jsp"/>
 
     <div class="content">
-        <%--<c:if  test="${my_team == true}">--%>
-            <jsp:include page="${type}.jsp"/>
-        <%--</c:if>--%>
-        <%--<c:if  test="${my_tournament == true}">--%>
-            <%--<jsp:include page="my_tournament.jsp"/>--%>
-        <%--</c:if>--%>
-        <%--<c:if  test="${statistics == true}">--%>
-            <%--<jsp:include page="statistics.jsp"/>--%>
-        <%--</c:if>--%>
-
+        <jsp:include page="${type}.jsp"/>
     </div>
   </div>
     <div class="float_button"> + </div>

@@ -40,7 +40,7 @@
         <c:otherwise><div class="menu_item"></c:otherwise>
     </c:choose>
         <div>
-            <img src="./img/my_tournament.png" >
+            <img src="./img/my_tournament_.png" >
         </div>
         <div>
             <span><a href="/home?type=my_tournament">My tournament</a></span>
