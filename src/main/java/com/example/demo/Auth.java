@@ -28,8 +28,8 @@ public class Auth {
         coach.email = "myDICKyour_dick@sosay.com";
 
         List<Player> players = new ArrayList<>();
-        players.add(new Player("Piska", 1, 2, 6, false, 1, 5, 1, 2, 4));
-        players.add(new Player("BigDig", 7, 2, 28, true, 2, 3, 4, 1, 5));
+        players.add(new Player("Piska", 1, 2, 6, true, 1, 5, 1, 2, 4));
+        players.add(new Player("BigDig", 7, 2, 28, false, 2, 3, 4, 1, 5));
         players.add(new Player("Pyatachok", 0, 10, 20, true, 5, 6, 4, 2, 8));
         players.add(new Player("Pisos", 3, 3, 12, false, 3, 1, 7, 5, 2));
 

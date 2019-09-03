@@ -1,17 +1,17 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
-<table>
+<table id="players_t">
     <thead>
-        <td>name</td>
-        <td>kills</td>
-        <td>passes</td>
-        <td>points</td>
-        <td>available</td>
-        <td>AV</td>
-        <td>AG</td>
-        <td>MA</td>
-        <td>STR</td>
-        <td>level</td>
+        <th id="name_h">name</th>
+        <th id="kills_h">kills</th>
+        <th id="passes_h">passes</th>
+        <th id="points_h">points</th>
+        <th id="available_h">available</th>
+        <th id="AV_h">AV</th>
+        <th id="AG_h">AG</th>
+        <th id="MA_h">MA</th>
+        <th id="STR_h">STR</th>
+        <th id="level_h">level</th>
     </thead>
     <tbody>
     <c:forEach items="${players}" var ="player">
@@ -33,15 +33,15 @@
 
 <table>
     <thead>
-    <td>team</td>
-    <td>win</td>
-    <td>draw</td>
-    <td>loose</td>
-    <td>GA</td>
-    <td>GC</td>
-    <td>K</td>
-    <td>value</td>
-    <td colspan="5">5 last</td>
+    <th>team</th>
+    <th>win</th>
+    <th>draw</th>
+    <th>loose</th>
+    <th>GA</th>
+    <th>GC</th>
+    <th>K</th>
+    <th>value</th>
+    <th colspan="5">5 last</th>
     </thead>
     <tbody>
         <tr>
@@ -76,3 +76,4 @@
         </tr>
     </tbody>
 </table>
+
