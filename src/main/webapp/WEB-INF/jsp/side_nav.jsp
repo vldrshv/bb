@@ -16,7 +16,7 @@
     <%--MENU--%>
 
     <%--      MY TEAM       --%>
-    <hr>
+    <hr class="divider">
         <c:choose>
             <c:when test="${my_team == true}">
                 <div class="menu_item choosen">

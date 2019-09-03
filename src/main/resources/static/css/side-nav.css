@@ -22,6 +22,11 @@ Navigation Drawer
   padding-top: 60px;
 }
 
+hr.divider {
+  border: 0.5px solid transparent;
+  background: rgba(154, 160, 166, 0.2);
+}
+
 .sidenav a {
   width: 250px;
   text-decoration: none;
@@ -116,7 +121,7 @@ body {
 }
 
 .menu_item span {
-  width: 100%;
+  width: 180px;
   text-decoration: none;
   float: left;
   margin-bottom: 5px;
