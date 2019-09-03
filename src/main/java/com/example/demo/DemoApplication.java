@@ -31,6 +31,7 @@ public class DemoApplication {
         ResultSet resultSet = db.getResultSet();
         Coach coach = new DataUtils<Coach>().convert(new Coach(), resultSet);
 
+        System.out.println(coach);
         SpringApplication.run(DemoApplication.class, args);
     }
     @Bean

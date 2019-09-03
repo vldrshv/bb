@@ -70,7 +70,7 @@
         <c:otherwise><div class="menu_item"></c:otherwise>
     </c:choose>
         <div>
-            <img src="./img/super-bowl-trophy_WC_c.png" >
+            <img src="./img/super-bowl-trophy_WC.png" >
         </div>
         <div>
             <span><a href="/home?type=WC">World cup</a></span>

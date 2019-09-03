@@ -32,16 +32,11 @@ dependencies {
     testCompile("junit:junit")
     compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.22'
 
-    // postgresql driver
     compile group: 'org.postgresql', name: 'postgresql', version: '9.3-1100-jdbc4'
-    // https://mvnrepository.com/artifact/javax.servlet/jstl
     compile group: 'javax.servlet', name: 'jstl', version: '1.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
-    // https://mvnrepository.com/artifact/org.webjars/bootstrap
-//    compile group: 'org.webjars', name: 'bootstrap', version: '4.1.0'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
 
-    // https://mvnrepository.com/artifact/org.webjars/jquery
-//    compile group: 'org.webjars', name: 'jquery', version: '2.1.3'
 
 }
 compileKotlin {
