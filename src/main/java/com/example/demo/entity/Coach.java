@@ -1,14 +1,30 @@
 package com.example.demo.entity;
 
-public class Coach {
-    public int id;
-    public String name;
-    public String email;
-    public String pin;
-    public int locationId;
-    public int teamId;
+import com.example.demo.DataMap;
 
-    public float avgPoints = 0.49f;
+public class Coach {
+    @DataMap("id")
+    public Integer id;
+    @DataMap("coach_name")
+    public String name;
+    @DataMap("email")
+    public String email;
+    @DataMap("pin")
+    public String pin;
+    @DataMap("location_id")
+    public Integer locationId;
+    @DataMap("team_id")
+    public Integer teamId;
+
+    public Float avgPoints = 0.49f;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;
@@ -34,27 +50,40 @@ public class Coach {
         this.pin = pin;
     }
 
-    public int getLocationId() {
+    public Integer getLocationId() {
         return locationId;
     }
 
-    public void setLocationId(int locationId) {
+    public void setLocationId(Integer locationId) {
         this.locationId = locationId;
     }
 
-    public int getTeamId() {
+    public Integer getTeamId() {
         return teamId;
     }
 
-    public void setTeamId(int teamId) {
+    public void setTeamId(Integer teamId) {
         this.teamId = teamId;
     }
 
-    public float getAvgPoints() {
+    public Float getAvgPoints() {
         return avgPoints;
     }
 
-    public void setAvgPoints(float avgPoints) {
+    public void setAvgPoints(Float avgPoints) {
         this.avgPoints = avgPoints;
+    }
+
+    @Override
+    public String toString() {
+        return "Coach{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", pin='" + pin + '\'' +
+                ", locationId=" + locationId +
+                ", teamId=" + teamId +
+                ", avgPoints=" + avgPoints +
+                '}';
     }
 }

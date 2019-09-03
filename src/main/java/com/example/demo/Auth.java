@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author vldrshv@gmail.com
+ */
 
 @Controller
 @RequestMapping("/")
@@ -22,10 +25,11 @@ public class Auth {
     }
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
-    public String home(String name, Model model) {
+    public String home(String name, Model model, @RequestParam(value = "type", required = false, defaultValue = "my_team") String type) {
         Coach coach = new Coach();
         coach.name = "EpicBonVagon";
         coach.email = "myDICKyour_dick@sosay.com";
+        
 
         List<Player> players = new ArrayList<>();
         players.add(new Player("Piska", 1, 2, 6, true, 1, 5, 1, 2, 4));
@@ -35,6 +39,12 @@ public class Auth {
 
         model.addAttribute("coach", coach);
         model.addAttribute("players", players);
+
+        model.addAttribute("type", type);
+        model.addAttribute(type, true);
+
+        System.out.println(type);
+
         return "home";
     }
 }

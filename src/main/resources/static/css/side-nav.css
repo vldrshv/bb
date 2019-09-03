@@ -24,7 +24,6 @@ Navigation Drawer
 
 .sidenav a {
   width: 250px;
-  padding: 8px 8px 8px 16px;
   text-decoration: none;
   font-size: 18px;
   color: #818181;
@@ -33,11 +32,8 @@ Navigation Drawer
 }
 .sidenav div.menu_item {
   width: 250px;
+  margin: 5px;
 }
-
-/*.sidenav a:hover {*/
-/*  color: black;*/
-/*}*/
 
 #main {
   transition: margin-left .5s;
@@ -119,17 +115,41 @@ body {
   float: left;
 }
 
-.menu_item {
+.menu_item span {
+  width: 100%;
+  text-decoration: none;
+  float: left;
+  margin-bottom: 5px;
+}
+
+.menu_item img{
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
+  margin-top: 5px;
 }
 
 .menu_item:hover {
+  background: rgba(0, 146, 244, 0.4);
+  border-radius: 25px 25px 25px 25px;
+  width: 230px !important;
+}
+.menu_item:hover a {
+  color: black;
+  transition: 0s;
+}
+
+.choosen {
+  background: rgba(0, 146, 244, 0.7);
+  border-radius: 25px 0% 0% 25px;
+}
+
+.choosen a {
+  color: black;
+}
+
+.choosen img {
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
-}
-.menu_item:hover a {
-  color: black;
 }

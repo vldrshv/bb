@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -22,91 +23,18 @@
         </div>
     </div>
   <div id="main">
-      <div id="mySidenav" class="sidenav">
-          <%--    TEAM HEADER     --%>
-          <div style="background: white; height: 100px; width: 250px">
-              <div style="float: left; margin-right: 10px; margin-left: 10px">
-                  <img id="my_team_logo" src="./img/my_team_logo.png" style="height: 25px; width: 25px; margin-top: 5px">
-              </div>
-              <div id="coach_info" style="display: none">
-                  <span style="font-size: 22px"><b>${coach.name}</b></span>
-                  <br>
-                  <span style="font-size: 10px">${coach.email}</span>
-              </div>
-          </div>
-          <%--      --%>
-
-          <%--MENU--%>
-
-          <%--      MY TEAM       --%>
-          <hr>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/my_team.png" >
-              </div>
-              <div>
-                  <a href="#" id="m1">My team</a>
-              </div>
-          </div>
-
-          <%--      MY TOURNAMENT       --%>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/my_tournament.png" >
-              </div>
-              <div>
-                  <a href="#">My tournament</a>
-              </div>
-          </div>
-
-          <%--      STATISTICS       --%>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/statistics.png" >
-              </div>
-              <div>
-                  <a href="#">Statistics</a>
-              </div>
-          </div>
-
-          <%--      WORLD CUP       --%>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/super-bowl-trophy_WC_c.png" >
-              </div>
-              <div>
-                  <a href="#">World cup</a>
-              </div>
-          </div>
-
-          <%--      EURO CUP       --%>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/naf_cup_hovered.png" >
-              </div>
-              <div>
-                  <a href="#">Euro cup</a>
-              </div>
-          </div>
-
-          <%--      WAAAT       --%>
-          <div class="menu_item">
-              <div>
-                  <img src="./img/my_waaat.png" >
-              </div>
-              <div>
-                  <a href="#">Waaat?</a>
-              </div>
-          </div>
-          <%--MENU END--%>
-      </div>
+    <jsp:include page="side_nav.jsp"/>
 
     <div class="content">
-      <h2>Sidenav Push Example</h2>
-      <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black  see-through background-color to body when the sidenav is opened.</p>
-<!--  -->
-        <jsp:include page="team_list.jsp"/>
-<!--  -->
+        <%--<c:if  test="${my_team == true}">--%>
+            <jsp:include page="${type}.jsp"/>
+        <%--</c:if>--%>
+        <%--<c:if  test="${my_tournament == true}">--%>
+            <%--<jsp:include page="my_tournament.jsp"/>--%>
+        <%--</c:if>--%>
+        <%--<c:if  test="${statistics == true}">--%>
+            <%--<jsp:include page="statistics.jsp"/>--%>
+        <%--</c:if>--%>
 
     </div>
   </div>
