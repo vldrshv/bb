@@ -22,16 +22,16 @@ public class DemoApplication {
 
     public static void main(String[] args) {
 //        try {
-        DataBase db = new DataBase();
-        db.setStoredFunction("{ ? = call initial.get_coach_by_email(?) }");
-        List<InOutVar> list = new ArrayList<>();
-        list.add(new InOutVar(Types.OTHER, null, true));
-        list.add(new InOutVar(Types.VARCHAR, "a@a.a", false));
-        db.registerVariablesAndExecute(list);
-        ResultSet resultSet = db.getResultSet();
-        Coach coach = new DataUtils<Coach>().convert(new Coach(), resultSet);
-
-        System.out.println(coach);
+//        DataBase db = new DataBase();
+//        db.setStoredFunction("{ ? = call initial.get_coach_by_email(?) }");
+//        List<InOutVar> list = new ArrayList<>();
+//        list.add(new InOutVar(Types.OTHER, null, true));
+//        list.add(new InOutVar(Types.VARCHAR, "a@a.a", false));
+//        db.registerVariablesAndExecute(list);
+//        ResultSet resultSet = db.getResultSet();
+//        Coach coach = new DataUtils<Coach>().convert(new Coach(), resultSet);
+//
+//        System.out.println(coach);
         SpringApplication.run(DemoApplication.class, args);
     }
     @Bean

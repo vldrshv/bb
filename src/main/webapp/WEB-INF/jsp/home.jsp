@@ -22,15 +22,19 @@
             <img src="./img/logo_animated.svg" style="height: 50px; width: 50px; margin-top: 5px">
         </div>
     </div>
-  <div id="main">
-    <jsp:include page="side_nav.jsp"/>
+    <div id="main">
+        <jsp:include page="side_nav.jsp"/>
 
-    <div class="content">
-        <jsp:include page="${type}.jsp"/>
+        <div class="content">
+            <jsp:include page="${type}.jsp"/>
+        </div>
     </div>
-  </div>
-    <div class="float_button"> + </div>
 
+    <div onclick="expandFloat()">
+        <div class="float_button" id="float_button" > &#9776; </div>
+        <div class="little_float_button first" id="lil_floatbutton1"> + </div>
+        <div class="little_float_button second" id="lil_floatbutton2"> ? </div>
+    </div>
   <script>
   function openNav() {
       $("#mySidenav").width("250px");
@@ -53,6 +57,22 @@
   }).mouseleave(function() {
       closeNav()
   });
+
+  function expandFloat() {
+      // $("#float_button").mouseenter(function () {
+          // alert("aaaa")
+      if ($('#lil_floatbutton1').is(":hidden")) {
+          $('#lil_floatbutton1').show();
+          $('#lil_floatbutton2').show();
+          $('#float_button').html('&#10799')
+      } else {
+          // }).mouseleave(function () {
+          $('#lil_floatbutton1').hide();
+          $('#lil_floatbutton2').hide();
+          $('#float_button').html('&#9776;')
+          // });
+      }
+  }
 
   var table = $('#players_t');
 

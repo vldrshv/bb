@@ -107,6 +107,38 @@ body {
   transition: box-shadow .2s;
 }
 
+.little_float_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: var(--accent-color);
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 8px rgba(0,0,0,0.5); /* Параметры тени */
+  text-align: center;
+  color: white;
+
+  font-size: 25px;
+}
+.little_float_button:hover {
+  box-shadow: 0 0 12px rgba(0,0,0,0.7); /* Параметры тени */
+  transition: box-shadow .2s;
+}
+
+.first {
+  bottom: 140px;
+  right: 35px;
+}
+.second {
+  bottom: 205px;
+  right: 35px
+}
+
 .menu_item img {
   float: left;
   height: 30px;
