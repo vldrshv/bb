@@ -1,8 +1,10 @@
 package com.example.demo;
 
 import com.example.demo.dao.DataBase;
+import com.example.demo.dao.PlayersDAO;
 import com.example.demo.entity.Coach;
 import com.example.demo.entity.InOutVar;
+import com.example.demo.entity.Player;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
@@ -21,17 +23,6 @@ import java.util.Locale;
 public class DemoApplication {
 
     public static void main(String[] args) {
-//        try {
-//        DataBase db = new DataBase();
-//        db.setStoredFunction("{ ? = call initial.get_coach_by_email(?) }");
-//        List<InOutVar> list = new ArrayList<>();
-//        list.add(new InOutVar(Types.OTHER, null, true));
-//        list.add(new InOutVar(Types.VARCHAR, "a@a.a", false));
-//        db.registerVariablesAndExecute(list);
-//        ResultSet resultSet = db.getResultSet();
-//        Coach coach = new DataUtils<Coach>().convert(new Coach(), resultSet);
-//
-//        System.out.println(coach);
         SpringApplication.run(DemoApplication.class, args);
     }
     @Bean

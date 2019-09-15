@@ -1,30 +1,60 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <table id="players_t">
     <thead>
-        <th id="name_h">name</th>
-        <th id="kills_h">kills</th>
-        <th id="passes_h">passes</th>
-        <th id="points_h">points</th>
-        <th id="available_h">available</th>
-        <th id="AV_h">AV</th>
-        <th id="AG_h">AG</th>
-        <th id="MA_h">MA</th>
-        <th id="STR_h">STR</th>
-        <th id="level_h">level</th>
+        <th id="name_h" class="sorted_by_this">
+            <div> name </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <%--<th id="kills_h" data-sortby="number">--%>
+            <%--<div> kills </div>--%>
+            <%--<div class="material-icons padding_" style="font-size: 10px"> sort </div>--%>
+        <%--</th>--%>
+        <%--<th id="passes_h">--%>
+            <%--<div> passes </div>--%>
+            <%--<div class="material-icons padding_" style="font-size: 10px"> sort </div>--%>
+        <%--</th>--%>
+        <%--<th id="points_h">--%>
+            <%--</div> points </div>--%>
+            <%--<div class="material-icons padding_" style="font-size: 10px"> sort </div>--%>
+        <%--</th>--%>
+        <th id="available_h">
+            </div> available </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <th id="AV_h">
+            </div> AV </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <th id="AG_h">
+            </div> AG </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <th id="MA_h">
+            </div> MA </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <th id="STR_h">
+            </div> STR </div>
+            <div class="material-icons padding_" style="font-size: 10px"> sort </div>
+        </th>
+        <%--<th id="level_h">--%>
+            <%--</div> level </div>--%>
+            <%--<div class="material-icons padding_" style="font-size: 10px"> sort </div>--%>
+        <%--</th>--%>
     </thead>
     <tbody>
     <c:forEach items="${players}" var ="player">
         <tr>
             <td>${player.name}</td>
-            <td>${player.kills}</td>
-            <td>${player.passes}</td>
-            <td>${player.points}</td>
-            <td marked="${not player.available}">${player.available}</td>
-            <td>${player.AV}</td>
-            <td>${player.AG}</td>
-            <td>${player.MA}</td>
-            <td>${player.STR}</td>
-            <td>${player.level}</td>
+            <%--<td>${player.kills}</td>--%>
+            <%--<td>${player.passes}</td>--%>
+            <%--<td>${player.points}</td>--%>
+            <td marked="${not player.isAvailable}">${player.isAvailable}</td>
+            <td>${player.AVcurrent}</td>
+            <td>${player.AGcurrent}</td>
+            <td>${player.MAcurrent}</td>
+            <td>${player.STRcurrent}</td>
+            <%--<td>${player.level}</td>--%>
         </tr>
     </c:forEach>
     </tbody>

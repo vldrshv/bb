@@ -22,7 +22,7 @@ public class DataBase {
     public void setStoredFunction(String storedFunction) {
         try {
             connection.setAutoCommit(false);
-            this.cs = connection.prepareCall(storedFunction);
+            this.cs = connection.prepareCall(storedFunction, ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (SQLException e) {
             e.printStackTrace();
         }
@@ -47,8 +47,11 @@ public class DataBase {
     }
 
     private void setInVar(int position, InOutVar var) throws SQLException {
-        if (var.object instanceof java.lang.String) {
+        if (var.object instanceof String) {
             cs.setString(position, (String)var.object);
+        }
+        if (var.object instanceof Integer) {
+            cs.setInt(position, (Integer)var.object);
         }
     }
 

@@ -1,5 +1,6 @@
 package com.example.demo;
 
+import com.example.demo.dao.PlayersDAO;
 import com.example.demo.entity.Coach;
 import com.example.demo.entity.Player;
 import org.springframework.stereotype.Controller;
@@ -29,13 +30,13 @@ public class Auth {
         Coach coach = new Coach();
         coach.name = "EpicBonVagon";
         coach.email = "myDICKyour_dick@sosay.com";
-        
 
-        List<Player> players = new ArrayList<>();
-        players.add(new Player("Piska", 1, 2, 6, true, 1, 5, 1, 2, 4));
-        players.add(new Player("BigDig", 7, 2, 28, false, 2, 3, 4, 1, 5));
-        players.add(new Player("Pyatachok", 0, 10, 20, true, 5, 6, 4, 2, 8));
-        players.add(new Player("Pisos", 3, 3, 12, false, 3, 1, 7, 5, 2));
+
+        PlayersDAO pd = new PlayersDAO();
+        List<Player> players = pd.getPlayersByTeamId(1);
+        for (Player p : players) {
+            System.out.println(p.name);
+        }
 
         model.addAttribute("coach", coach);
         model.addAttribute("players", players);

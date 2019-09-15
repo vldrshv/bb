@@ -67,3 +67,60 @@ jQuery.fn.sortElements = (function(){
     };
 
 })();
+
+
+function init_sorting(parent) {
+    var table = $(parent);
+    var thead_columns_q = table.find('th').length;
+    var idString = "";
+    for (var i = 0; i < thead_columns_q; i++) {
+        idString += '#' + table.find('th').eq(i).attr('id');
+        if (i !== thead_columns_q - 1)
+            idString += ', ';
+    }
+
+    $(idString)
+        .wrapInner('<span title="sort this column"/>')
+        .each(function(){
+
+            var th = $(this),
+                thIndex = th.index(),
+                inverse = false;
+
+            th.click( function () {
+                table.find('.sorted_by_this').removeClass('sorted_by_this');
+                th.addClass('sorted_by_this');
+                sort_table(table, th, thIndex, inverse);
+                inverse = !inverse;
+            });
+
+        });
+}
+
+function sort_table ( table, th, thIndex, inverse, sortby) {
+        table.find('td').filter(function(){
+
+            return $(this).index() === thIndex;
+
+        }).sortElements(function(a, b){
+            if (isNaN(parseInt($.text([b]))))
+                return $.text([a]) > $.text([b])
+                    ? inverse ? -1 : 1
+                    : inverse ? 1 : -1;
+
+            // if (inverse)
+                return parseInt($.text([a])) < parseInt($.text([b]))
+                    ? inverse ? -1 : 1
+                    : inverse ? 1 : -1;
+            // else
+            //     return parseInt($.text([a])) > parseInt($.text([b]))
+
+        }, function(){
+
+            // parentNode is the element we want to move
+            return this.parentNode;
+
+        });
+
+
+}

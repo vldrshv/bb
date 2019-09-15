@@ -34,6 +34,7 @@ hr.divider {
   color: #818181;
   display: block;
   transition: 0.3s;
+  font-family: 'Manjari', sans-serif;
 }
 .sidenav div.menu_item {
   width: 250px;
@@ -80,6 +81,7 @@ body {
 .content {
   margin: 8px;
   margin-left: 60px;
+  width: 100%;
 }
 
 .float_button {
@@ -91,8 +93,8 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  left: 90%;
-  bottom: 5%;
+  right: 20px;
+  bottom: 30px;
   background: var(--accent-color);
   border-radius: 50%;
   z-index: 1;
@@ -109,6 +111,7 @@ body {
 
 .little_float_button {
   display: flex;
+  /*display: none;*/
   align-items: center;
   justify-content: center;
   cursor: pointer;
@@ -131,11 +134,11 @@ body {
 }
 
 .first {
-  bottom: 140px;
+  bottom: 135px;
   right: 35px;
 }
 .second {
-  bottom: 205px;
+  bottom: 195px;
   right: 35px
 }
 
@@ -156,7 +159,7 @@ body {
   width: 180px;
   text-decoration: none;
   float: left;
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 }
 
 .menu_item img{
@@ -181,7 +184,7 @@ body {
 }
 
 .choosen a {
-  color: black;
+  color: white;
 }
 
 .choosen img {
